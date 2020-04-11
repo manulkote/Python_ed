@@ -1,0 +1,6 @@
+f_obj = open("Ex_5_File.txt", 'w')
+f_obj.write(input('Введите числа разделенные пробелами '))
+f_obj.close()
+f_obj = open("Ex_5_File.txt")
+print('Сумма числе в файле:', sum([int(i) for i in f_obj.read().split()]))
+f_obj.close()
